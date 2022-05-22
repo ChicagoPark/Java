@@ -93,30 +93,68 @@ final float PI = 3.14F;
 ## [4] Casting and Type conversion
 In Java, we have two types of casting:
 
-### [Implicit Type Casting]
+### [Casting and Type conversion - Implicit Type Casting]
 > happens automatically when we store a value in a larger or more precise data type.
 
   * byte > short > int > long > float > double
 
-### [Explicit Type Casting]
-> we do it manually. 
-
-* To convert a string to a number, we use one of the following methods: 
-
-
-
-#### Implicit casting
 ```java
 short x = 1;
 int y = x + 2;
 System.out.println(y);
 ```
 
+### [Casting and Type conversion - Explicit Type Casting]
+> we do it manually. 
+
+* To convert a string to a number, we use one of the following methods: 
+
+• Byte.parseByte(“1”)
+
+• Short.parseShort(“1”)
+
+• Integer.parseInt(“1”)
+
+• Long.parseLong(“1”)
+
+• Float.parseFloat(“1.1”)
+
+• Double.parseDouble(“1.1”) 
+
+
+### [4] Math
+
+```java
+int result = Math.round(1.1F);
+
+int result = (int) Math.ceil(1.1F) // Math.ceil returns double datatype
+
+int y = Math.max(14,15);
+
+double y = Math.random(); // get floating point number between 0 to 1
+
+double y = Math.random() * 100; // get floating point number between 0 to 100
+```
+
+
+### [5] Reading input
+```java
+Scanner scanner = new Scanner(System.in);
+System.out.print("Age: ");
+byte age = scanner.nextByte();
+// String line = scanner.nextLine();
+System.out.println("You are " + age);
+```
+
+
+
+
 
 ## [Useful Material]
 
 Useful shortcut
 sout: System.out.println();
+Shift+F6: replace selected message
 
 
 Name convention: CamelCase
