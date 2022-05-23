@@ -146,6 +146,58 @@ byte age = scanner.nextByte();
 System.out.println("You are " + age);
 ```
 
+### [6] Comparison Operators
+```java
+int x = 1;
+int y = 1;
+System.out.println(x == y);
+// true
+```
+
+### [7] Logical Operators
+&&
+||
+
+
+### [8] Condition Operators
+```java
+int temp = 32;
+if (temp > 30){
+    System.out.println("It's a hot day");
+    System.out.println("Drink water");
+}
+else if (temp > 20)
+    System.out.println("Beautiful day");
+else
+    System.out.println("Cold day");
+```
+
+### [9] Ternary Operators
+```java
+String className = income > 100_000 ? "First" : "Economy";
+```
+
+Switch statement
+```java
+String role = "admin";
+switch (role) {
+    case "admin":
+        System.out.println("You're an admin");
+        break;
+
+    case "moderator":
+        System.out.println("You're a moderator");
+        break;
+
+    default:
+        System.out.println("You're a guest");
+}
+```
+
+
+
+### [9] Loops
+
 
 
 
