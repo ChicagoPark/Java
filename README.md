@@ -255,10 +255,12 @@ Name convention: CamelCase
 int myAge
 int herAge
 
-### Lec: 1:12:46 - 22/05/22 (https://www.youtube.com/watch?v=eIrMbAQSU34&t=296s)
+
 
 
 <!--
+### Lec: 1:12:46 - 22/05/22 (https://www.youtube.com/watch?v=eIrMbAQSU34&t=296s)
+
 We called the functions which belong to the class as METHODs
 
 -->
