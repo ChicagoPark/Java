@@ -1,17 +1,22 @@
 # Java
 
 ## [0] Characteristics of Java
-> Main function should belong to class named java file name
 
-> Access modifier is necessary for class: `Public` or Private
+* (1) Main function should belong to class named java file name
 
-```java
-public class Main {
-  public static void main() {
-    ...
-  }
-}
-```
+* (2) Access modifier is necessary for class: `Public` or Private
+
+* (3) 
+
+> ```java
+> public class Main {
+>   public static void main() {
+>     ...
+>   }
+> }
+> ```
+
+----
 
 ## [1] Data Type 
 
@@ -28,15 +33,26 @@ Thus, when we use float type, we need to add `F` at the end of the number
 ```
 
 ### [Data Type - Reference Date Type]
-> for storing complex objects like email messages. 
-
-> However, since we use String type often, we don't need to use new operator for String. (`String is immutable`)
+> In Java we have 8 primitive types. All the other types are reference types.
+> 
+> These types `don’t store the actual objects in memory`. They `store the reference` (or the address of) an object in memory.
+>
+> `Therefore`, To use `reference types`, we need to allocate memory using the `new operator`.
+> 
+> The memory gets automatically released when no longer used. 
+>
+> However, since we use String type often, we don't need to use `new operator` for String. (`String is immutable`)
 
 
 * Data Type Example Code
 ```java
+//Primitive Data Type
 long viewsCount = 3_123_456_789L;
 float price = 10.99F;
+
+//Reference Date Type
+Date now = new Date();
+String young = "HIHI";
 
 String message = "Hello World"+"!!";
 System.out.println(message.length());
@@ -57,17 +73,24 @@ System.out.println(message.toLowerCase());
 #### [Array - Arrays Class]
 > The Array class provides a few useful methods for working with arrays.
 
+> For printing purpose, `Arrays.toString(ARRAY_NAME)`.
+
 ```java
-int [] numbers = new int[5];
-numbers[0] = 1;
-numbers[1] = 2;
+// Creating and and initializing an array of 5 elements
+int[] numbers = new int[3];
+numbers[0] = 10;
+numbers[1] = 20;
+numbers[2] = 30;
+
+// Shortcut
+int[] numbers = { 10, 20, 30 };
 
 // Printing
 System.out.println(numbers);
 //[I@2d98a335
 
 System.out.println(Arrays.toString(numbers));
-//[1, 2, 0, 0, 0]
+//[10, 20, 30]
 
 //Sorting
 int [] numbers = {2,3,5,1,4};
@@ -77,26 +100,30 @@ System.out.println(Arrays.toString(numbers));
 
 // Printing multi-dimensional array
 int[][] numbers = new int[2][3];
-        numbers[0][0] = 1;
-        System.out.println(Arrays.deepToString(numbers));
+numbers[0][0] = 1;
+System.out.println(Arrays.deepToString(numbers));
 //[[1,0,0],[0,0,0]] 
        
 ```
 
-### [3] Global Variable
+----
+
+## [3] Global Variable
 > Use `final` statement in front of the data type
 
 ```java
 final float PI = 3.14F;
 ```
 
+----
+
 ## [4] Casting and Type conversion
-In Java, we have two types of casting:
+In Java, we have two types of casting: `Implicit Type Casting`, `Explicit Type Casting`
 
 ### [Casting and Type conversion - Implicit Type Casting]
 > happens automatically when we store a value in a larger or more precise data type.
 
-  * byte > short > int > long > float > double
+  * `byte > short > int > long > float > double`
 
 ```java
 short x = 1;
@@ -122,7 +149,7 @@ System.out.println(y);
 • Double.parseDouble(“1.1”) 
 
 
-### [4] Math
+## [5] Math
 
 ```java
 int result = Math.round(1.1F);
@@ -137,7 +164,7 @@ double y = Math.random() * 100; // get floating point number between 0 to 100
 ```
 
 
-### [5] Reading input
+## [6] Reading input
 ```java
 Scanner scanner = new Scanner(System.in);
 System.out.print("Age: ");
@@ -146,7 +173,7 @@ byte age = scanner.nextByte();
 System.out.println("You are " + age);
 ```
 
-### [6] Comparison Operators
+## [7] Comparison Operators
 ```java
 int x = 1;
 int y = 1;
@@ -154,12 +181,12 @@ System.out.println(x == y);
 // true
 ```
 
-### [7] Logical Operators
-&&
-||
+## [8] Logical Operators
+> And operator: &&
+> Or operator: ||
 
 
-### [8] Condition Operators
+## [9] Condition Operators
 ```java
 int temp = 32;
 if (temp > 30){
@@ -172,12 +199,7 @@ else
     System.out.println("Cold day");
 ```
 
-### [9] Ternary Operators
-```java
-String className = income > 100_000 ? "First" : "Economy";
-```
-
-Switch statement
+##### [Condition Operator - Switch statement]
 ```java
 String role = "admin";
 switch (role) {
@@ -194,11 +216,15 @@ switch (role) {
 }
 ```
 
+## [10] Ternary Operators
+```java
+String className = income > 100_000 ? "First" : "Economy";
+```
 
 
-### [9] Loops
+## [11] Loops
 
-##### Loops - for loop
+### [Loops - for loop]
 
 ```java
 for (int i = 0; i < 5; i++)
@@ -217,8 +243,7 @@ for (String fruit : fruits)
     System.out.println(fruit);
 ```
 
-
-##### Loops - while loop
+### [Loops - while loop]
 
 ```java
 i = 0;
@@ -240,21 +265,21 @@ while (!input.equals("quit)) {
 
 
 
-
-
 ## [Useful Material]
 
-Useful shortcut
-sout: System.out.println();
-Shift+F6: replace selected message
+##### Useful shortcut
+> sout: System.out.println();
+> 
+> Shift+F6: replace selected message
 
 
-Name convention: CamelCase
+##### Name convention: CamelCase
 > capitalize all the words except first word
 
+```java
 int myAge
 int herAge
-
+```
 
 
 
