@@ -22,7 +22,7 @@
 
 ### [Data Type - Primitive Data Type]
 > for storing simple values like numbers, strings and booleans.
-> > <img width="350" alt="IMG" src="https://user-images.githubusercontent.com/73331241/169656914-35cd8e20-1c15-4c89-b15c-7239f0e24556.png">
+> > <img width="190" alt="IMG" src="https://user-images.githubusercontent.com/73331241/169656914-35cd8e20-1c15-4c89-b15c-7239f0e24556.png">
 
 ```bash
 Java sees the integer number as `int`
