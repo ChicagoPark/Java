@@ -394,6 +394,9 @@ So, how to implement those abstracted behavior functions?
 
 rightside of initializsation should be implementation child class
 
+allow abstract class its own method
+
+
 * [0] Abstarct class - GraphicObject
 ```java
 public abstract class GraphicObject {
@@ -452,8 +455,37 @@ public class AbstractDemo {
     }
 }
 ```
-
 ----------------
+
+--------------------
+
+Interface
+> Interface is going to define the specifications of how a class works at.
+> 
+> Interface is going to contract the specifications of how a application behaves.
+
+
+Interface in Java
+> In the Java programming language, an interface is a reference type, similar to a class, that can contain only constants, method signatures, default methods, static methods, and nested types.
+> 
+> Method bodies exist only for default methods and static methods.
+> 
+> Interfaces cannot be instantiated - they can only be implemented by classes or extended by other interfaces. Extension is discussed later in this lesson.
+
+Use `interface` keyword instead of `class` keyword.
+
+We can only declare methods, we cannot implements.
+
+not allow interface its own method(concrete implementation) and any variable
+
+interface allow only public static variable
+
+Interface does not require `super method`, because we have nothing to initialize
+
+
+`Child class` of the interface should provide the implementation
+
+--------------------
 
 
 
