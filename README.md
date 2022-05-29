@@ -267,6 +267,9 @@ while (!input.equals("quit)) {
 
 # Object-Oriented Programming
 
+----
+Super basic of the class
+
 class: logical entity (Human-being, Lecturer, vehicle and so on)
 
 > Every enitity has its own attributes(height and feet) and behavior (speak, work and eat)
@@ -286,6 +289,71 @@ getter: the behavior function to get the class's attributes
 `this` keyword means `current object`.
 can direct current class's attributes and behavior functions
 
+----
+
+--------
+
+Access Modifiers
+<img width="350" alt="IMG" src="https://user-images.githubusercontent.com/73331241/170847512-7842fe0d-cf71-48ae-a048-cd2cc5b0e4b2.png">
+
+
+
+> if we didn't provide the modifier, it automatically set `no modifier`
+
+
+<img width="150" alt="IMG" src="https://user-images.githubusercontent.com/73331241/170847794-4b40f54b-caf8-44db-a210-41ffd48bd694.png">
+
+> This case, the Main.java and Test.java are in the different package
+
+* Child class
+```java
+// Parent class: Bicycle
+// Child  class: MountainBike
+
+public class MountainBike extends Bicycle {
+    public int seatHeight;
+    public MountainBike(int startHeight, int startSpeed, int startGear) {
+        super(startSpeed, startGear); // Use super statement as the first statement of initializer
+        this.seatHeight = startHeight;
+    }
+    public void setHeight(int newValue){
+        this.seatHeight = newValue;
+    }
+}
+```
+
+* Main class
+```java
+public class Main {
+    public static void main(String[] args) {
+        MountainBike mountainBike = new MountainBike(20, 10 , 1);
+        System.out.println("Bike speed is: "+ mountainBike.speed);
+        
+        mountainBike.applyBrake(1);
+        System.out.println("Bike speed after applying brake is: " + mountainBike.speed);
+    }
+}
+
+/*
+Bike speed is: 10
+Bike speed after applying brake is: 9
+*/
+```
+
+put the extra property in child class and mention it in front of the argument initializer
+
+--------
+
+------------
+
+Inheritance
+> A class that is derived from another class is called a subclass (also child class or extended class). The class from which the subclass is derived is called a superclass (also a base class or a parent class).
+
+<img width="350" alt="IMG" src="https://user-images.githubusercontent.com/73331241/170847919-78f89a7b-bd42-4587-a4a5-8094713f6650.png">
+
+> From child class, use extends keyword to inheritate
+
+------------
 
 
 <!--
@@ -299,6 +367,8 @@ https://www.udemy.com/course/oo-se-java/
 > sout: System.out.println();
 > 
 > Shift+F6: replace selected message
+> 
+> psvm: public static void main(String[] args)
 
 
 ##### Name convention: CamelCase
