@@ -267,19 +267,30 @@ while (!input.equals("quit)) {
 
 # Object-Oriented Programming
 
+class: logical entity (Human-being, Lecturer, vehicle and so on)
+
+> Every enitity has its own attributes(height and feet) and behavior (speak, work and eat)
+
+
+object: instance of the class
+
+
+setter: the behavior function to set the class's attributes
+
+> naming convention: public String setName(String name)
+
+getter: the behavior function to get the class's attributes
+> naming convention: public String getName()
+
+
+`this` keyword means `current object`.
+can direct current class's attributes and behavior functions
+
+
+
 <!--
 https://www.udemy.com/course/oo-se-java/
 -->
-
-
-
-
-
-
-
-
-
-
 
 
 ## [Useful Material]
