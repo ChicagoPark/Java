@@ -294,6 +294,7 @@ can direct current class's attributes and behavior functions
 --------
 
 Access Modifiers
+
 <img width="350" alt="IMG" src="https://user-images.githubusercontent.com/73331241/170847512-7842fe0d-cf71-48ae-a048-cd2cc5b0e4b2.png">
 
 
@@ -355,6 +356,106 @@ Inheritance
 
 ------------
 
+Encapsulation
+> To restict the outside world accessing the property of a class
+
+
+(1) set the Access Modifiers of attributes as private
+
+(2) make set and get function for outside world can access to particular property
+> From IntelliJ, we can generate the functions by clicking `generate` in the right mouse button
+------------
+
+----------------
+
+Abstraction
+
+> Hide very detail to provide the very simple interface to user
+> 
+> Abstract classes cannot be instantiated, but they can be subclassed
+> 
+> An abstract method is a method that is declared without an implementation just for `declaration`
+
+
+Code
+Making abstract class: put the abstract keyword before the class keyword
+
+> By mentioning abstract keyword, it automatically gets properties
+> First property: Abstract class must have at least one abstract behavior function (abstract void draw();)
+> > put the `abstract` keyword before the behavior functions
+> 
+
+So, how to implement those abstracted behavior functions?
+> We have extend this abstract class by creating child class
+> 
+> Child class should cover all the implementation of all the abstract behavior functions in the abstract class
+>
+> Child class for abstract class can be multiple.
+
+rightside of initializsation should be implementation child class
+
+* [0] Abstarct class - GraphicObject
+```java
+public abstract class GraphicObject {
+    int x, y;
+
+    void moveTo(int newX, int newY){
+        System.out.println("move to x: "+x+" and y:"+y);
+    }
+    abstract void draw();
+    abstract void resize();
+}
+```
+
+* [1] Child class - Circle
+
+```java
+public class Circle extends GraphicObject {
+    @Override
+    void draw() {
+        System.out.println("Drawing a circle");
+    }
+    @Override
+    void resize() {
+        System.out.println("Resizing a circle");
+    }
+}
+```
+
+* [2] Child class - Rectangle
+
+```java
+public class Rectangle extends GraphicObject{
+    @Override
+    void draw() {
+        System.out.println("Drawing a Rectangle");
+    }
+
+    @Override
+    void resize() {
+        System.out.println("Resizing a Rectangle");
+    }
+}
+```
+
+* [3] Main Class of Abstract Practice
+```java
+public class AbstractDemo {
+    public static void main(String[] args) {
+        GraphicObject circle = new Circle();
+        circle.draw();
+        circle.resize();
+
+        GraphicObject rectangle = new Rectangle();
+        rectangle.draw();
+        rectangle.resize();
+    }
+}
+```
+
+----------------
+
+
 
 <!--
 https://www.udemy.com/course/oo-se-java/
@@ -378,6 +479,11 @@ https://www.udemy.com/course/oo-se-java/
 int myAge
 int herAge
 ```
+
+how to
+split
+f""
+
 
 
 <!--
