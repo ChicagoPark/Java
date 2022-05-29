@@ -6,15 +6,7 @@
 
 * (2) Access modifier is necessary for class: `Public` or Private
 
-* (3) 
 
-> ```java
-> public class Main {
->   public static void main() {
->     ...
->   }
-> }
-> ```
 
 ----
 
@@ -268,36 +260,24 @@ while (!input.equals("quit)) {
 # Object-Oriented Programming
 
 ----
-Super basic of the class
+## [0] Basic of the class
 
-class: logical entity (Human-being, Lecturer, vehicle and so on)
+> ##### (1) class: `logical entity` (Human-being, Lecturer, vehicle and so on)
 
-> Every enitity has its own attributes(height and feet) and behavior (speak, work and eat)
+> ##### (2) Inside of the class: Every enitity has its `own attributes(properties)`(height and feet) and `behavior functions` (speak, work and eat)
 
+> ##### (3) object: instance of the class
 
-object: instance of the class
+> `this` keyword: `current object`. It can direct current class's attributes and behavior functions
 
-
-setter: the behavior function to set the class's attributes
-
-> naming convention: public String setName(String name)
-
-getter: the behavior function to get the class's attributes
-> naming convention: public String getName()
-
-
-`this` keyword means `current object`.
-can direct current class's attributes and behavior functions
 
 ----
 
 --------
 
-Access Modifiers
+## [1] Access Modifiers
 
 <img width="350" alt="IMG" src="https://user-images.githubusercontent.com/73331241/170847512-7842fe0d-cf71-48ae-a048-cd2cc5b0e4b2.png">
-
-
 
 > if we didn't provide the modifier, it automatically set `no modifier`
 
@@ -305,6 +285,49 @@ Access Modifiers
 <img width="150" alt="IMG" src="https://user-images.githubusercontent.com/73331241/170847794-4b40f54b-caf8-44db-a210-41ffd48bd694.png">
 
 > This case, the Main.java and Test.java are in the different package
+
+--------
+
+------------
+
+## [2] Inheritance
+> A class that is derived from another class is called a `subclass` (also child class or extended class).
+> 
+> The class from which the subclass is derived is called a `superclass` (also a base class or a parent class).
+
+<img width="350" alt="IMG" src="https://user-images.githubusercontent.com/73331241/170847919-78f89a7b-bd42-4587-a4a5-8094713f6650.png">
+
+> From child class, use `extends` keyword to inheritate
+
+> put the `extra properties` of child class in front of the initializer function
+
+
+
+* Parent class
+```java
+public class Bicycle {
+    protected int gear;
+    protected int speed;
+
+    // Initializer
+    public Bicycle(int startSpeed, int startGear){
+        gear = startGear;
+        speed = startSpeed;
+    }
+    public void setGear(int newValue){
+        gear = newValue;
+    }
+    public void setSpeed(int newValue){
+        speed = newValue;
+    }
+    public void applyBrake(int decrement) {
+        speed -= decrement;
+    }
+    public void speedUp(int increment) {
+        speed += increment;
+    }
+}
+```
 
 * Child class
 ```java
@@ -341,60 +364,68 @@ Bike speed after applying brake is: 9
 */
 ```
 
-put the extra property in child class and mention it in front of the argument initializer
-
---------
-
 ------------
 
-Inheritance
-> A class that is derived from another class is called a subclass (also child class or extended class). The class from which the subclass is derived is called a superclass (also a base class or a parent class).
-
-<img width="350" alt="IMG" src="https://user-images.githubusercontent.com/73331241/170847919-78f89a7b-bd42-4587-a4a5-8094713f6650.png">
-
-> From child class, use extends keyword to inheritate
-
-------------
-
-Encapsulation
+## [3] Encapsulation
 > To restict the outside world accessing the property of a class
 
 
-(1) set the Access Modifiers of attributes as private
+(1) set the Access Modifiers of `attributes` as `private`
 
-(2) make set and get function for outside world can access to particular property
+(2) make `set and get function` for outside world can access to `particular properties`
+
+* Useful information for set function and get function
 > From IntelliJ, we can generate the functions by clicking `generate` in the right mouse button
+
+
+```bash
+setter: the behavior function to set the class's attributes
+> naming convention: public String setName(String name)
+
+getter: the behavior function to get the class's attributes
+> naming convention: public String getName()
+```
+
 ------------
 
-----------------
-
-Abstraction
-
-> Hide very detail to provide the very simple interface to user
+## [4] Abstraction
+> Abstraction is a process of `hiding the implementation details` from the user,
 > 
-> Abstract classes cannot be instantiated, but they can be subclassed
+> `only the functionality` will be provided to the user.
+> 
+> In other words, the user will have the information on `what the object does` instead of `how it does it`.
+
+
+> Abstract classes `cannot be instantiated`, but they can be subclassed
 > 
 > An abstract method is a method that is declared without an implementation just for `declaration`
 
 
-Code
-Making abstract class: put the abstract keyword before the class keyword
-
-> By mentioning abstract keyword, it automatically gets properties
-> First property: Abstract class must have at least one abstract behavior function (abstract void draw();)
-> > put the `abstract` keyword before the behavior functions
+* Code
+> (1) making abstract class: put the abstract keyword before the class keyword
 > 
-
-So, how to implement those abstracted behavior functions?
-> We have extend this abstract class by creating child class
+> (2) put the `abstract` keyword before the behavior functions
 > 
-> Child class should cover all the implementation of all the abstract behavior functions in the abstract class
+> (3) By mentioning abstract keyword, it automatically gets properties
+> 
+> (4) First property: Abstract class must have `at least one abstract behavior function` (abstract void draw();)
+> 
+> (5) allow abstract class its own method
+> 
+> (6) rightside of initializsation should be implementation child class
+> 
+> > ```java
+> > GraphicObject circle = new Circle();
+> > GraphicObject rectangle = new Rectangle();
+> > ```
+ 
+
+* So, `how to implement` those abstracted behavior functions?
+> (1) We have extend this abstract class by `creating child class`
+> 
+> (2) Child class `should cover all the implementation` of all the `abstract behavior functions` in the abstract class
 >
-> Child class for abstract class can be multiple.
-
-rightside of initializsation should be implementation child class
-
-allow abstract class its own method
+> (3) Child class for abstract class `can be multiple`.
 
 
 * [0] Abstarct class - GraphicObject
@@ -410,7 +441,7 @@ public abstract class GraphicObject {
 }
 ```
 
-* [1] Child class - Circle
+* (1) Child class - Circle
 
 ```java
 public class Circle extends GraphicObject {
@@ -425,7 +456,7 @@ public class Circle extends GraphicObject {
 }
 ```
 
-* [2] Child class - Rectangle
+* (2) Child class - Rectangle
 
 ```java
 public class Rectangle extends GraphicObject{
@@ -441,7 +472,7 @@ public class Rectangle extends GraphicObject{
 }
 ```
 
-* [3] Main Class of Abstract Practice
+* (3) Main Class of Abstract Practice
 ```java
 public class AbstractDemo {
     public static void main(String[] args) {
@@ -455,11 +486,10 @@ public class AbstractDemo {
     }
 }
 ```
-----------------
 
 --------------------
 
-Interface
+## [5] Interface
 > Interface is going to define the specifications of how a class works at.
 > 
 > Interface is going to contract the specifications of how a application behaves.
@@ -485,8 +515,27 @@ Interface does not require `super method`, because we have nothing to initialize
 
 `Child class` of the interface should provide the implementation
 
---------------------
 
+
+
+Abstract Classes vs Interfaces:
+
+> The biggest difference between them is purpose. 
+
+> Abstract classes: Generalize Behavior
+> 
+> Interfaces: Standardize Behavior
+
+
+
+
+
+
+
+
+
+
+--------------------
 
 
 <!--
