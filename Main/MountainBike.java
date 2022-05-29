@@ -11,7 +11,4 @@ public class MountainBike extends Bicycle {
     public void setHeight(int newValue){
         this.seatHeight = newValue;
     }
-
-    public abstract static class Rectangle extends GraphicObject {
-    }
 }
