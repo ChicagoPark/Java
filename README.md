@@ -530,8 +530,73 @@ Abstract Classes vs Interfaces:
 
 
 
+----
+
+# Data Structure
+> is a way of organizing data so that it can be used effectively.
 
 
+* Why Data Structures are important?
+
+       * They are essential ingredients in creating fast and powerful algorithms.
+       * They help to manage and organize data.
+       * They make code cleaner and easier to understand.
+
+
+* Abstract Data Types vs Data Structures
+
+       * An abstract data type (ADT) is an abstraction of a data structure which provides only the interface to which a data structure must adhere to.
+
+       * The interface does not give any specific details about how something should be implemented or in what programming language. 
+
+       > Specific details would be data structure itself.
+
+
+> <img width="350" alt="IMG" src="https://user-images.githubusercontent.com/73331241/170902061-822bfc79-ead3-42b3-b661-c635acb0dd0f.png">
+
+
+
+* Complexity Analysis
+
+> As rogrammers, we often find ourselves asking the same two questions over and over again:
+> 
+>      > How much time does this algorithm need to finish?
+>      > 
+>      > How much space does this algorithm need for its computation?
+
+
+
+> Big-O Notation
+> > Big-O Notation gives an upperbound of the complexity in the worst case, helping to quantify performance as the input size becomes arbitrarily large.
+
+> <img width="350" alt="IMG" src="https://user-images.githubusercontent.com/73331241/170902442-231f6219-d054-414d-bc03-5842e8889b46.png">
+
+
+
+(1) The following run in constant time: O(1)
+
+> If loop doest not depend on n, it takes constant time to run
+
+> <img width="350" alt="IMG" src="https://user-images.githubusercontent.com/73331241/170902890-369da846-58ad-431e-bf6e-9124705847de.png">
+
+
+(2) The following run in linear time: O(n)
+
+> <img width="350" alt="IMG" src="https://user-images.githubusercontent.com/73331241/170903033-cc06a29a-82a8-4074-94b4-7d93a9395bb4.png">
+
+
+(3) The following run in quadratic time: O(n(^2))
+> From the second example below, since it is factorial, the summation is n(n+1)/2. Thus, it is also quadratic time.
+> 
+> <img width="350" alt="IMG" src="https://user-images.githubusercontent.com/73331241/170903197-aad17212-f20e-469f-89e1-d884c6f2ed1b.png">
+
+> <img width="350" alt="IMG" src="https://user-images.githubusercontent.com/73331241/170903244-fdafb1ad-ee24-4f5c-a68e-a68a468104ff.png">
+
+(4) The following run in logarithm time: O(log(n))
+> <img width="350" alt="IMG" src="https://user-images.githubusercontent.com/73331241/170903536-0a6dafaf-fadd-4bfd-9807-f44a4eeb21a4.png">
+
+(5) Other time complexitie
+> <img width="350" alt="IMG" src="https://user-images.githubusercontent.com/73331241/170905011-0d479ab1-3de9-454d-b6b8-3b0777018c94.png">
 
 
 
