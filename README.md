@@ -600,6 +600,47 @@ Abstract Classes vs Interfaces:
 
 
 
+## [] Array
+*Array - Static Array
+> a fixed length container containing n elements indexable from the range [0, n-1]
+
+> When and where is a Static Array used?
+> > Used from everywhere.
+> 
+> > 1) Storing and accessing sequential data
+> >
+> > 2) Temporarily storing objects
+> >
+> > 3) Used by IO routines as buffers
+> > 
+> > 4) Lookup tables and inverse lookup tables
+> > 
+> > 5) Can be used to `return multiple values` from a function
+> > 
+> > 6) Used in dynamic programming to cache answers to subproblems.
+
+* Complexity
+
+> <img width="350" alt="IMG" src="https://user-images.githubusercontent.com/73331241/170980400-01c8f03a-1b6c-4608-b866-4d870b2ffcc2.png">
+
+
+*Array - Dynamic Array
+> The dynamic array can grow and shrink in size.
+
+> <img width="350" alt="IMG" src="https://user-images.githubusercontent.com/73331241/170981316-a2e65902-b3e5-4626-904d-b63d274b87d3.png">
+
+> Q: How can we implement a dynamic array?
+> A: One way is to use a static array
+> 
+> 1) Create a static array with an initial capacity.
+>
+> 2) Add elements to the underlying static array, keeping track of the number of elements.
+> 
+> 3) If adding another element will exceed the capacity, then create a new static array with twice the capacity and copy the original elements into it.
+
+> <img width="350" alt="IMG" src="https://user-images.githubusercontent.com/73331241/170982399-92401079-6c08-4d6e-8705-326aa3580a6d.png">
+
+
 --------------------
 
 
