@@ -652,11 +652,27 @@ https://www.udemy.com/course/oo-se-java/
 ## [Useful Material]
 
 ##### Useful shortcut
-> sout: System.out.println();
+> "sysout", then Ctrl + Space: System.out.println();
 > 
-> Shift+F6: replace selected message
+> Alt + Shift + R: Rename variable, method, or class
 > 
-> psvm: public static void main(String[] args)
+> Alt + Shift + Z: put dragged field into conditional statement or exception handler
+> 
+> Ctrl + Shift + F: Auto-format
+> 
+> Ctrl + Shift + O: Optimize imports
+> 
+> Ctrl + /: Comment or uncomment lines of code
+> 
+> Ctrl + Shift + /: Multi-line block comment
+> 
+> "main", then Ctrl + Space: public static void main(String[] args)
+> 
+> Alt + Shift + M: Extract method from dragged area
+> 
+> Ctrl + Alt + H: View call hierarchy
+> 
+> F3: Jump to variable declaration
 
 
 ##### Name convention: CamelCase
