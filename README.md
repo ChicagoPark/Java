@@ -2,11 +2,6 @@
 
 ## [0] Characteristics of Java
 
-* (1) Main function should belong to class named java file name
-
-* (2) Access modifier is necessary for class: `Public` or Private
-
-
 
 ----
 
@@ -61,11 +56,19 @@ System.out.println(message.toLowerCase());
 > We use arrays to store a list of objects. We can store any type of object in an array
 > (primitive or reference type). All items (also called elements) in an array have the
 > same type.
+> 
+> `Additionally, once the size of the array is allocated, an array cannot change size.`
 
-#### [Array - Arrays Class]
-> The Array class provides a few useful methods for working with arrays.
+#### [Array - Useful methods]
 
-> For printing purpose, `Arrays.toString(ARRAY_NAME)`.
+* (1) Get the length of the Array
+    * arrayVariable.length
+   
+* (2) Print the Single Array
+    * For printing purpose, System.out.println(`Arrays.toString(ARRAY_NAME)`).
+
+* (3) Print the Double Array
+    * For printing purpose, System.out.println(`Arrays.deepToString(ARRAY_NAME)`).
 
 ```java
 // Creating and and initializing an array of 5 elements
@@ -73,13 +76,6 @@ int[] numbers = new int[3];
 numbers[0] = 10;
 numbers[1] = 20;
 numbers[2] = 30;
-
-// Shortcut
-int[] numbers = { 10, 20, 30 };
-
-// Printing
-System.out.println(numbers);
-//[I@2d98a335
 
 System.out.println(Arrays.toString(numbers));
 //[10, 20, 30]
@@ -94,8 +90,7 @@ System.out.println(Arrays.toString(numbers));
 int[][] numbers = new int[2][3];
 numbers[0][0] = 1;
 System.out.println(Arrays.deepToString(numbers));
-//[[1,0,0],[0,0,0]] 
-       
+//[[1,0,0],[0,0,0]]        
 ```
 
 ----
@@ -124,9 +119,7 @@ System.out.println(y);
 ```
 
 ### [Casting and Type conversion - Explicit Type Casting]
-> we do it manually. 
-
-* To convert a string to a number, we use one of the following methods: 
+* To convert a `string` to a number, we use one of the following methods: 
 
 • Byte.parseByte(“1”)
 
