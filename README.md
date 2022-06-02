@@ -3,6 +3,10 @@
 ## [0] Characteristics of Java
 
 
+Good software practice: (1) Contain variables in scopes, (2) Declare variables close to where they are needed
+
+
+
 ----
 
 ## [1] Data Type 
@@ -149,6 +153,37 @@ double y = Math.random() * 100; // get floating point number between 0 to 100
 ```
 
 
+## [] Function
+Main idea: Abstraction(Generalize an idea to make it more widely applicable)
+
+
+Heat 200 cc water to 100 degrees
+Stir in 5 grams of yeast
+Melt butter and stir in the vanilla with the butter
+After 5 minutes, combine yeast with butter, sugar, and flour
+Place the mixture in a 110 degree oven to rise for 45 minutes
+Divide the mixture into 10 equally sized portions and cook for 45 minutes at 350 degrees
+
+Abstraction
+1. Mix with spoon thing1 /  thing2 / speed
+2. Apply heat - element / time / degree
+
+Implementation:
+(1) Types of inputs
+(2) Types of output
+
+`public static`: idiomatic expression
+
+```java
+public static int mpy(int c, int d){
+   int sum = 0;
+   for(int i = 0; i < d; i++){
+      sum += c;
+   }
+   return sum;
+}
+```
+
 ## [6] Reading input
 ```java
 Scanner scanner = new Scanner(System.in);
@@ -227,6 +262,13 @@ for (int i = fruits.length; i > 0; i--)
 for (String fruit : fruits)
     System.out.println(fruit);
 ```
+### [Loops Array- for loop]
+```java
+for (int i:array){
+   System.out.println("I have a number: " + i);
+}
+```
+
 
 ### [Loops - while loop]
 
@@ -360,6 +402,8 @@ Bike speed after applying brake is: 9
 ------------
 
 ## [3] Encapsulation
+> Hide details and contain variables and code to avoid unwanted interactions
+> 
 > To restict the outside world accessing the property of a class
 
 
@@ -666,6 +710,8 @@ https://www.udemy.com/course/oo-se-java/
 > Ctrl + Alt + H: View call hierarchy
 > 
 > F3: Jump to variable declaration
+> 
+> /** + Enter: describe the information about the upcoming function
 
 
 ##### Name convention: CamelCase
