@@ -185,7 +185,7 @@ public static int mpy(int c, int d){
 ```
 
 ## [] Recursion: 비듬찾기, Non-비듬을 mpy(x, y-1) 와 같이 표현할 방법 모색
-
+(Best material for understanding: 6.80~6.85)
 ##### [Recursion - Explicit Recursion(Easy)]
 > Some formula are explicitly recursive such as FACTORIAL operation
 
@@ -199,7 +199,9 @@ public static int mpy(int c, int d){
 > > 
 > > See the problems in terms of its simplest subproblem
 
+Base call
 
+Recursive call
 
 
 ## [6] Reading input
