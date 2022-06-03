@@ -184,7 +184,7 @@ public static int mpy(int c, int d){
 }
 ```
 
-## [] Recursion: 비듬찾기
+## [] Recursion: 비듬찾기, Non-비듬을 mpy(x, y-1) 와 같이 표현할 방법 모색
 
 ##### [Recursion - Explicit Recursion(Easy)]
 > Some formula are explicitly recursive such as FACTORIAL operation
