@@ -184,6 +184,24 @@ public static int mpy(int c, int d){
 }
 ```
 
+## [] Recursion: 비듬찾기
+
+##### [Recursion - Explicit Recursion(Easy)]
+> Some formula are explicitly recursive such as FACTORIAL operation
+
+<img width="350" alt="IMG" src="https://user-images.githubusercontent.com/73331241/171802900-9eac4217-5d16-4820-b0ca-013bfe7cd92e.png">
+
+##### [Recursion - Finding Recursive substructure]
+> This case, we have to find the recursion in a problem.
+
+> Requires a bit of `faith` and `vision`
+> > Trust that a method does what we want it to do.
+> > 
+> > See the problems in terms of its simplest subproblem
+
+
+
+
 ## [6] Reading input
 ```java
 Scanner scanner = new Scanner(System.in);
