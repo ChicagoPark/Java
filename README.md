@@ -446,6 +446,7 @@ Bike speed after applying brake is: 9
 ------------
 
 ## [3] Encapsulation
+
 > Hide details and contain variables and code to avoid unwanted interactions
 > 
 > To restict the outside world accessing the property of a class
@@ -466,6 +467,37 @@ setter: the behavior function to set the class's attributes
 getter: the behavior function to get the class's attributes
 > naming convention: public String getName()
 ```
+
+------------
+
+Car and Boat are different.
+
+But both have initial price and cost per year. Those `common behaviors` can be expressed through interface
+
+
+Lists `Syntax: List<T>`
+
+> An ordered collection of elements
+
+> A `List<T>` contains elements `only of type T`
+
+> Fortunately, T can be a general type such as `List<Number>` which are able to contain Double, Integer, Long, etc. (`Object` is the most general type of all)
+   
+
+```java
+List<Color> colors;
+List<String> names;
+List<Double> values;
+List<Account> customers;
+```
+
+By list, we can do:
+> Add things to the list
+> Indexing
+> Where is the element on the list
+> Remove the value from the list
+> Find out the length of the list
+
 
 ------------
 
