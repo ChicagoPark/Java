@@ -586,7 +586,7 @@ Abstract Classes vs Interfaces:
 
 
 
-
+<!--
 ----
 
 # Data Structure
@@ -697,6 +697,8 @@ Abstract Classes vs Interfaces:
 
 > <img width="350" alt="IMG" src="https://user-images.githubusercontent.com/73331241/170982399-92401079-6c08-4d6e-8705-326aa3580a6d.png">
 
+
+-->
 
 --------------------
 
