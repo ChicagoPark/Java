@@ -323,8 +323,32 @@ while (!input.equals("quit)) {
 
 > ##### (3) object: instance of the class
 
+> ##### (4) constructor: A constructor is a special function that creates and initializes an object instance of a class
+      > The constructor has the same name as the object type.
+      > 
+      > The constructor can have parameters, but it has `no return type`
+      > 
+      > It is responsible for giving birth to the object. (Initializing instance variables)
+      > 
+      > There can be more than on constructor.
+
+> ##### (5) Instance variables(attributes): usually declared `private` for encapsulizing
+      > Methods can read and write these variables
+
+> ##### (6) methods(behavior functions)
+      > (6-1) getter method: returns the value of the instance variable balance
+
 > `this` keyword: `current object`. It can direct current class's attributes and behavior functions
 
+```java
+public class Account {
+   private int balance;
+   
+   public Account(int initialBal) {
+      this.balance = initialBal;
+   }
+}
+```
 
 ----
 
