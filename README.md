@@ -515,6 +515,89 @@ By list, we can do:
 > Find out the length of the list
 
 
+Implementation tips
+(1) Uses `interface` instead of class
+
+(2) parameterize the type in the class name
+
+(3) No constructors. (Because this is not really a class, it `just defines the signatures of available methods`)
+
+(4) No instance variables (Because no implementations of methods are here to remember things)
+
+
+
+Reason of using `interface`
+`No matter how the List is implemented, we should be able to perform these operations to any List`
+
+Thus, the specific inplementations may differ in how they carry out the above operations
+
+
+```java
+public interface List<T> {
+		
+		public boolean add(T e);
+		
+		public T get(int i);
+		
+		public int indexOf(T e);
+		
+		public boolean remove(T e);
+		
+		public T remove(int i);
+		
+		public int size();
+	}
+```
+
+* Interface
+   * Defines the signatures of the methods we want
+   > About "What" not about "How"
+   > 
+   > Don't have instance variables, constructors
+   > 
+   > Design without implementation
+   > 
+      > So that alternative implementations can satisfy the interface 
+
+* Implementation
+   * Says it "implementations" the interface
+   
+   * Must have actual implementations for all methods
+    
+   * If it is missing any, it cannot be instantiated.
+
+
+<img width="350" alt="IMG" src="https://user-images.githubusercontent.com/73331241/172032234-c132d251-2ebc-42c5-afd0-465728a778fe.png">
+
+* How to code in practice
+
+```java
+List<String> eating = new LinkedList<String>();
+```
+(1) We declare the variable with a type `List<String>`
+   > We can then invoke any method defined in the List interface on eating
+   > 
+   > We could have declared eating to be a `LinkedList<String>` and the program would have worked just as well
+   > 
+   > Bus `List<String>` is more general, so we should use that when possible
+
+(2) We cannot say new `List<String>` ()
+   > Because List is an `interface`, not a concrete class
+   > 
+   > Interfaces cannot be constructed
+  
+(3) So on the right-hand-side, we must assign some object of type `List<String>` or narrower
+
+(4) Because `LinkedList<String>` implements `List<String>`, it serves just fine
+
+(5) Or we could use an ArrayList
+   > Because it implements the List interface
+   > 
+   > Plug-compatible in terms of functionality
+   > 
+   > But time / space behavior may be different
+   
+
 ------------
 
 ## [4] Abstraction
