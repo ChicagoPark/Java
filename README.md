@@ -184,24 +184,40 @@ public static int mpy(int c, int d){
 }
 ```
 
-## [] Recursion: 비듬찾기, Non-비듬을 mpy(x, y-1) 와 같이 표현할 방법 모색
-(Best material for understanding: 6.80~6.85)
-##### [Recursion - Explicit Recursion(Easy)]
-> Some formula are explicitly recursive such as FACTORIAL operation
 
+
+
+
+
+## [] Recursion
+
+<!--
+(Best material for understanding: 6.80~6.85)
+-->
+
+> Formula-provided `Explicit Recursion(Easy)`, such as factorial, is `so easy` to solve.
+> 
+> However, since there are lots of occasion which is not the Explicit Recursion. Thus, we `need to convert` difficult one `to Explicit Recursion format`.
+
+#### [Recursion - Composition of Recursion]
 <img width="350" alt="IMG" src="https://user-images.githubusercontent.com/73331241/171802900-9eac4217-5d16-4820-b0ca-013bfe7cd92e.png">
 
-##### [Recursion - Finding Recursive substructure]
-> This case, we have to find the recursion in a problem.
 
-> Requires a bit of `faith` and `vision`
-> > Trust that a method does what we want it to do.
-> > 
-> > See the problems in terms of its simplest subproblem
+#### [Recursion - Algorithm Perspective]
+> (1) Find the tiny piece
+> 
+> (2) deeply consider how to express non-tiny pieces in `mpy(x, y-1)` format
 
-Base call
 
-Recursive call
+#### [Recursion - Understanding Basic Principle of Recursion]
+
+<img width="550" alt="IMG" src="https://user-images.githubusercontent.com/73331241/172029783-04d1afb9-ea61-4a0b-a162-593730f7aeb3.png">
+
+<img width="350" alt="IMG" src="https://user-images.githubusercontent.com/73331241/172029601-d0756c3e-b1bb-45c9-8ba0-6cd216e1f0f3.png">
+
+#### [Recursion - Understanding the Principle Inside of the Code]
+
+<img width="550" alt="IMG" src="https://user-images.githubusercontent.com/73331241/172029785-279cc962-05ec-48f4-87b2-ff6ba68e2f59.jpeg">
 
 
 ## [6] Reading input
