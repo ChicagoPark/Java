@@ -220,6 +220,18 @@ public static int mpy(int c, int d){
 <img width="550" alt="IMG" src="https://user-images.githubusercontent.com/73331241/172029785-279cc962-05ec-48f4-87b2-ff6ba68e2f59.jpeg">
 
 
+
+## Object Equality
+
+When a and b refer the same object(adress), both are the same.
+
+
+
+
+
+
+
+
 ## [6] Reading input
 ```java
 Scanner scanner = new Scanner(System.in);
