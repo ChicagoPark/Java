@@ -220,6 +220,8 @@ public static int mpy(int c, int d){
 <img width="550" alt="IMG" src="https://user-images.githubusercontent.com/73331241/172029785-279cc962-05ec-48f4-87b2-ff6ba68e2f59.jpeg">
 
 
+Before the recursive call is operated until it reaches base call, but after the recursive call would be operated following that.
+
 
 ## Object Equality
 
