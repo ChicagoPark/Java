@@ -880,8 +880,7 @@ https://www.udemy.com/course/oo-se-java/
 ## [Useful Material]
 
 ##### Useful shortcut
-> "sysout", then Ctrl + Space: System.out.println();
-> 
+
 > Alt + Shift + R: Rename variable, method, or class
 > 
 > Alt + Shift + Z: put dragged field into conditional statement or exception handler
@@ -903,6 +902,8 @@ https://www.udemy.com/course/oo-se-java/
 > F3: Jump to variable declaration
 > 
 > /** + Enter: describe the information about the upcoming function
+> 
+> "sysout", then Ctrl + Space: System.out.println();
 
 
 ##### Name convention: CamelCase
